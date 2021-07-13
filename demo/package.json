@@ -1,0 +1,17 @@
+{
+  "name": "quill-image-cloudinary-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "esbuild ./index.js --preserve-symlinks --servedir=public --outdir=public/js --bundle"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "esbuild": "^0.12.15",
+    "pretty": "^2.0.0",
+    "quill": "^1.3.7",
+    "quill-image-cloudinary": "file:.."
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "name": "quill-image-cloudinary",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "module": "src/index.js",
+  "scripts": {
+    "build:cjs": "esbuild src/index.js --bundle --outfile=dist/index.cjs.js --sourcemap --external:quill --format=cjs --target=es6",
+    "build:esm": "esbuild src/index.js --bundle --outfile=dist/index.esm.js --minify --sourcemap --external:quill --format=esm --target=es6",
+    "build": "npm run build:cjs && npm run build:esm"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ArnaudD/quill-image-cloudinary.git"
+  },
+  "keywords": [
+    "quill",
+    "cloudinary",
+    "image"
+  ],
+  "author": "@ArnaudD",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ArnaudD/quill-image-cloudinary/issues"
+  },
+  "homepage": "https://github.com/ArnaudD/quill-image-cloudinary#readme",
+  "peerDependencies": {
+    "quill": "1.x.x"
+  },
+  "devDependencies": {
+    "esbuild": "0.12.x"
+  },
+  "types": "./src/index.d.ts"
+}
